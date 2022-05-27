@@ -1,9 +1,10 @@
-import React from 'react'
-import logo from './logo.svg'
 import './App.css'
 import Greet from './components/Greet'
+import Heading from './components/Heading'
+import Oscar from './components/Oscar'
 import Person from './components/Person'
 import PersonList from './components/PersonList'
+import Status from './components/Status'
 
 function App() {
     const personName = {
@@ -33,8 +34,18 @@ function App() {
                     messageCount={10}
                     isLoggedIn={true}
                 />
+                <Greet name='Mohit Jain' isLoggedIn={true} />
                 <Person name={personName} />
                 <PersonList names={nameList} />
+                <hr />
+                <hr />
+                <Status status={'online'} />
+                <hr />
+                <hr />
+                <Heading>Placeholder text</Heading>
+                <Oscar>
+                    <Heading>ABC</Heading>
+                </Oscar>
             </div>
         </>
     )
