@@ -8,6 +8,7 @@ import Oscar from './components/Oscar'
 import Person from './components/Person'
 import PersonList from './components/PersonList'
 import Status from './components/Status'
+import { Counter } from './state/Counter'
 import { LoggedIn } from './state/LoggedIn'
 import { User } from './state/User'
 
@@ -71,6 +72,9 @@ function App() {
                 <hr />
                 <LoggedIn />
                 <User />
+                <hr />
+                <hr />
+                <Counter />
             </div>
         </>
     )
