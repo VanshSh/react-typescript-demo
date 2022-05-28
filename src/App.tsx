@@ -12,6 +12,7 @@ import { Counter } from "./state/Counter";
 import { LoggedIn } from "./state/LoggedIn";
 import { User } from "./state/User";
 import { List } from "./components/generics/List";
+import { RandomNumber } from "./components/restrictions/RandomNumber";
 
 function App() {
   const personName = {
@@ -74,9 +75,11 @@ function App() {
           onClick={(item) => console.log(item)}
         />
         <List
-          items={[1,2,3,4,5,6]}
+          items={[1, 2, 3, 4, 5, 6]}
           onClick={(item) => console.log(item)}
         />
+        <hr /> <hr />
+        <RandomNumber value={10} isPositive />
       </div>
     </>
   );
