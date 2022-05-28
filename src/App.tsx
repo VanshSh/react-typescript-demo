@@ -13,6 +13,8 @@ import { LoggedIn } from "./state/LoggedIn";
 import { User } from "./state/User";
 import { List } from "./components/generics/List";
 import { RandomNumber } from "./components/restrictions/RandomNumber";
+import { CustomButton } from "./components/html/CustomButton";
+import { Text } from "./components/polymorphic/Text";
 
 function App() {
   const personName = {
@@ -80,6 +82,16 @@ function App() {
         />
         <hr /> <hr />
         <RandomNumber value={10} isPositive />
+        <hr /> <hr />
+        <CustomButton variant="primary" onClick={() => console.log("clicked")}>
+          Primary Button
+        </CustomButton>
+        <hr /> <hr />
+        <Text as='h1' size="lg">Heading</Text>
+        <Text as='p' size="md">Paragraphs</Text>
+        <Text as='label' size="sm" color="secondary">
+          Label
+        </Text>
       </div>
     </>
   );
